@@ -3,16 +3,11 @@ import PropTypes from "prop-types";
 // import "./contact.css";
 
 class Contact extends Component {
-  constructor() {
-    super();
-    this.state = {};
+  state = {};
 
-    this.onShowClick = this.onShowClick.bind(this);
-  }
-  // state = {};
-  onShowClick() {
-    console.log(this.state);
-  }
+  onShowClick = e => {
+    console.log(e.target);
+  };
 
   render() {
     const { contact } = this.props;
