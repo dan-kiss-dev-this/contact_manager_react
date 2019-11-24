@@ -10,6 +10,8 @@ import NotFound from "./components/pages/NotFound";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+import Contacts2 from './RedoContact'
+
 class App extends Component {
   render() {
     return (
@@ -17,6 +19,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Header branding="Contact Manager" />
+            <Contacts2 />
             <div className="container">
               <Switch>
                 <Route exact path="/" component={Contacts} />
